@@ -1,0 +1,70 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.greeting {
+    font-size: 1rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #222;
+}
+
+.name .emoji {
+    font-size: 2rem;
+}
+
+.title {
+    color: #f39c12;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 8px 0;
+}
+
+.description {
+    color: #555;
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    line-height: 1.6;
+}
+
+.cv-button {
+    background: #f39c12;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cv-button:hover {
+    background: #d9840c;
+}
+
+.hero-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f39c12;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

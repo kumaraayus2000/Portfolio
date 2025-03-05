@@ -1,0 +1,317 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('./assets/Space.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  overflow-x: hidden;
+
+  /* Center content */
+  display: flex;
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically */
+  min-height: 100vh;           /* Full viewport height */
+  text-align: center;          /* Optional: Centers text inside */
+  overflow-y: auto;            /* Enable scrolling if needed */
+}
+
+
+/* Container for the entire app */
+.App {
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffb400;
+}
+
+.header nav a {
+  color: #ffb400;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+  color: #ffffff;
+}
+
+/* Section */
+.section {
+  background: linear-gradient(145deg, #1a1a1e, #131316);
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+/* Section Heading */
+h2 {
+  font-size: 1.8rem;
+  color: #ffb400;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffb400;
+  display: inline-block;
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffb400;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+/* .about-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  
+
+} */
+
+.about-section {
+  background: white; /* White background */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: black; /* Black text */
+  max-width: 900px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional - add a subtle border if you like */
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #f39c12;
+}
+
+/* Profile photo */
+.about-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f39c12; /* Gold border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: -70px auto 15px; /* Make photo overlap the top */
+  background: white; /* Ensure no background clash */
+}
+
+/* Title styling */
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #222; /* Darker black for title */
+}
+
+/* Divider line */
+.about-section h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #f39c12;
+  margin: 8px auto;
+}
+
+/* Text */
+.about-section p {
+  font-size: 1rem;
+  color: #333; /* Dark gray for better readability */
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+
+.about-section img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #ffb400;
+  color: #1a1a1e;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+} */
+
+.skills-section {
+  background: white; /* White background */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: black; /* Black text */
+  max-width: 900px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional top border for a stylish touch */
+.skills-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #f39c12;
+}
+
+/* Section title */
+.skills-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #222; /* Darker black */
+}
+
+/* Title underline */
+.skills-section h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #f39c12;
+  margin: 8px auto;
+}
+
+/* Skills list */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Individual skill badge */
+.skills-list li {
+  background: #f39c12; /* Gold background */
+  color: black; /* Black text */
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: transform 0.3s;
+}
+
+.skills-list li:hover {
+  transform: translateY(-3px);
+}
+
+
+/* Projects */
+.project-card {
+  background: #1a1a1e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  background: #ffb400;
+  color: #1a1a1e;
+  transform: translateY(-5px);
+}
+
+.project-card a {
+  color: #ffb400;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.project-card:hover a {
+  color: #1a1a1e;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #f1f1f1;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+a {
+  color: #ffb400;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffffff;
+}
